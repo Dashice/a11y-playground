@@ -13,11 +13,6 @@
     @apply overflow-hidden;
   }
 
-  button,
-  [role='button'] {
-    @apply bg-yellow-600 text-white py-2 px-4 w-full max-w-xs;
-  }
-
   input {
     @apply bg-gray-800 text-white py-1 px-4 w-full max-w-xs;
   }
