@@ -14,7 +14,7 @@ const _9 = () => {
       <div className="max-w-2xl flex flex-col gap-4">
         <div className="border-white border p-2">
           <button
-            className="bg-transparent text-start p-0"
+            className="custom bg-transparent text-start p-0"
             onClick={() => setIsOpen(!isOpen)}
           >
             <span className="text-[13px] me-1">{isOpen ? '▼' : '▶'} </span>

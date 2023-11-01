@@ -58,7 +58,9 @@ const _3 = () => {
             <div className="my-12 bg-white h-px w-full" />
 
             <div className="flex flex-col gap-4 items-center">
-              <button>Payment</button>
+              <button className="bg-yellow-600 text-white py-2 px-4 w-full max-w-xs">
+                Payment
+              </button>
               <p className="max-w-xs text-xs text-gray-400">
                 By pressing "Payment", you certify that your details are
                 correct. No refunds will be issued after the payment

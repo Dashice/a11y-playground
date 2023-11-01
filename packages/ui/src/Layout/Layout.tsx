@@ -6,8 +6,8 @@ import { tw } from 'helpers';
 const navigation = [
   { title: 'Semantics', url: '/', display: true },
   { title: 'ARIA', url: '/aria', display: true },
+  { title: 'Concepts', url: '/concepts', display: true },
   { title: 'Patterns', url: '/patterns', display: false },
-  { title: 'Advanced Patterns', url: '/advanced-patterns', display: false },
 ];
 
 export const Layout = ({ children }: LayoutProps) => {
