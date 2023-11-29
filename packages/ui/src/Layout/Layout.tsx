@@ -7,7 +7,7 @@ const navigation = [
   { title: 'Semantics', url: '/', display: true },
   { title: 'ARIA', url: '/aria', display: true },
   { title: 'Concepts', url: '/concepts', display: true },
-  { title: 'Patterns', url: '/patterns', display: false },
+  { title: 'Patterns', url: '/patterns', display: true },
 ];
 
 export const Layout = ({ children }: LayoutProps) => {

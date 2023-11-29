@@ -30,18 +30,27 @@ export const View = ({
               {difficulty === 1 && 'Beginner'}
               {difficulty === 2 && 'Intermediate'}
               {difficulty === 3 && 'Expert'}
+              {difficulty === 'secret' && 'Secret'}
             </p>
-            {[...Array(difficulty)].map((_, index) => (
-              <div
-                key={index}
-                className={tw(
-                  'rounded-full w-3 h-3',
-                  difficulty === 1 && 'bg-blue-500',
-                  difficulty === 2 && 'bg-yellow-500',
-                  difficulty === 3 && 'bg-red-500'
-                )}
-              />
-            ))}
+            {typeof difficulty === 'number' &&
+              [...Array(difficulty)].map((_, index) => (
+                <div
+                  key={index}
+                  className={tw(
+                    'rounded-full w-3 h-3',
+                    difficulty === 1 && 'bg-blue-500',
+                    difficulty === 2 && 'bg-yellow-500',
+                    difficulty === 3 && 'bg-red-500'
+                  )}
+                />
+              ))}
+            {difficulty === 'secret' && (
+              <Fragment>
+                <div className="rounded-full w-3 h-3 bg-slate-500" />
+                <div className="rounded-full w-3 h-3 bg-slate-400" />
+                <div className="rounded-full w-3 h-3 bg-slate-300" />
+              </Fragment>
+            )}
           </div>
         </div>
         <div className="flex-1 flex gap-32 items-center justify-center">
