@@ -1,0 +1,33 @@
+import { View } from 'ui';
+
+const _4 = () => {
+  return (
+    <View
+      title="4. Semantics (Image + Text)"
+      difficulty={1}
+      description="Copy the markup into the empty <div /> and fix any semantic oversights whilst preserving the styles."
+    >
+      <div className="max-w-2xl flex flex-col gap-4">
+        <figure className="space-y-4 bg-gray-800 rounded-lg p-4">
+          <img
+            src="/jelly.jpg"
+            alt="A fluorescent jellyfish swimming in an ocean's depths"
+            className="object-cover max-w-md aspect-[4/3] rounded-md"
+          />
+          <figcaption>
+            <a
+              href="https://en.wikipedia.org/wiki/Jellyfish"
+              className="underline"
+              target="_blank"
+            >
+              Spotted jellies
+            </a>{' '}
+            swimming in a Tokyo aquarium
+          </figcaption>
+        </figure>
+      </div>
+    </View>
+  );
+};
+
+export default _4;
