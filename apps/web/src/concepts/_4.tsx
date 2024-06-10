@@ -16,7 +16,6 @@ const _4 = () => {
       title="4. Concepts (Radio Buttons)"
       difficulty={2}
       description='Below is a set of radio buttons created with <input type="radio" /> elements. Create an exact copy of the radio buttons using standard <button /> elements and ensure they behave the exact same way from a keyboard navigation perspective as the native radio elements. No role / ARIA implementation is needed for this exercise.'
-      challenge="If you have a working solution, attempt to implement a 'Roving Tabindex' pattern. This is usually done if the custom radio's represent items in a toolbar."
     >
       <div className="max-w-2xl flex flex-col gap-4">
         <div role="toolbar" className={styles.container}>
