@@ -1,6 +1,5 @@
-import { tw } from 'helpers';
-import { useEffect, useState } from 'react';
-import { View } from 'ui';
+import { useEffect, useState } from "react";
+import { View } from "ui";
 
 type State = boolean | undefined;
 
@@ -23,33 +22,20 @@ const _7 = () => {
       <div className="max-w-2xl flex flex-col gap-4">
         {/** The JSX part of your solution goes here. */}
 
-        <p
-          className={tw(
-            prefersHighContrast === true && 'text-white',
-            prefersHighContrast !== true && 'text-slate-700'
-          )}
-        >
+        <p>
           When high contrast is preferred; make my text color "text-slate-700".
         </p>
 
         <ul>
-          <li
-            className={tw(
-              prefersDarkMode === true && 'bg-slate-700 text-slate-300'
-            )}
-          >
+          <li>
             Night mode: I have Tailwind classes "bg-slate-700 text-slate-300".
           </li>
-          <li
-            className={tw(
-              prefersDarkMode === false && 'bg-slate-300 text-slate-700'
-            )}
-          >
+          <li>
             Light mode: I have Tailwind classes "bg-slate-300 text-slate-700".
           </li>
         </ul>
 
-        <p className={tw(prefersReducedMotion !== true && 'animate-pulse')}>
+        <p className="animate-pulse">
           When reduced motion is preferred, stop my animation.
         </p>
       </div>
