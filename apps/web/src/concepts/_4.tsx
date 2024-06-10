@@ -19,10 +19,9 @@ const _4 = () => {
       challenge="If you have a working solution, attempt to implement a 'Roving Tabindex' pattern. This is usually done if the custom radio's represent items in a toolbar."
     >
       <div className="max-w-2xl flex flex-col gap-4">
-        <div className={styles.container}>
+        <div role="toolbar" className={styles.container}>
           <label className={styles.label}>
             <input
-              role="toolbar"
               type="radio"
               name="dessert"
               value="tiramisu"
@@ -32,7 +31,6 @@ const _4 = () => {
           </label>
           <label className={styles.label}>
             <input
-              role="toolbar"
               type="radio"
               name="dessert"
               value="velvet"
@@ -42,7 +40,6 @@ const _4 = () => {
           </label>
           <label className={styles.label}>
             <input
-              role="toolbar"
               type="radio"
               name="dessert"
               value="creme"
